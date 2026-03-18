@@ -9,12 +9,10 @@ export default async function handler(req, res) {
       }
     );
 
-    const data = await response.json();
+    const text = await response.text(); // 👈 bukan json dulu
 
-    res.status(200).json(data);
+    res.status(200).send(text);
   } catch (error) {
-    res.status(500).json({
-      error: error.toString(),
-    });
+    res.status(500).json({ error: error.toString() });
   }
 }
