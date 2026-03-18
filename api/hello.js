@@ -4,7 +4,7 @@ export default async function handler(req, res) {
       "https://be-lms.kemkes.go.id/v1/ext/fasynakes/course?page=1&pageSize=10",
       {
         headers: {
-          "x-api-key": "ISI_API_KEY_KAMU",
+          "x-api-key": "94373781-698a-4161-8635-8d68736f3a5b",
         },
       }
     );
